@@ -21,7 +21,7 @@ def train2search(lr, l2_lambda, hidden_size):
                           output_size=10, l2_lambda=l2_lambda)
     optimizer = SGD(lr=lr)
     train_size = x_train.shape[0]
-    batch_size = 50  # cbc:试几十到几百之间
+    batch_size = 50
 
     train_loss_list = []
     test_loss_list = []
@@ -62,16 +62,14 @@ def train2search(lr, l2_lambda, hidden_size):
 
 
 # 定义待搜索的超参数取值列表
-lr_list = [0.1,0.2,0.3]   # [0.1,0.2,0.3]
-# l2_lambda_list = [0.003,0.001,0.002]    # 0.002 [0.003,0.001,0.002]
-l2_lambda_list = [0.002]    # 0.002 [0.003,0.001,0.002]
-# hidden_size_list = [255,240,250]    # 250 [255,240,250]
-hidden_size_list = [250]
+lr_list = [0.3,0.2,0.25]   # 0.3[0.3,0.2,0.25]
+l2_lambda_list = [0.0015,0.001,0.0005]    # 0.001 [0.0015,0.001,0.0005]
+hidden_size_list = [255,245,250]    # 245 [255,245,250]
 
 best_lr = None
 best_l2_lambda = None
 best_hidden_size = None
-best_performance = float('inf')  # 初始设置为正无穷
+best_performance = float('inf')
 
 results_val = {}
 results_train = {}

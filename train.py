@@ -4,11 +4,12 @@ from dataset.mnist import load_mnist
 from two_layer_net import TwoLayerNet
 from util import SGD
 
+# train
 (x_train, y_train), (x_test, y_test) = load_mnist(normalize=True)
 
-network = TwoLayerNet(input_size=784, hidden_size_list=[250, 250],
-                      output_size=10, l2_lambda=0.02)
-optimizer = SGD(lr=0.2)
+network = TwoLayerNet(input_size=784, hidden_size_list=[245, 245],
+                      output_size=10, l2_lambda=0.01)
+optimizer = SGD(lr=0.3)
 max_epochs = 50
 train_size = x_train.shape[0]
 batch_size = 500
@@ -54,8 +55,7 @@ plt.plot(x, test_loss_list, color="blue", linewidth=2.0, linestyle="--", label="
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.ylim(0, max(train_loss_list[0], test_loss_list[0]) + 0.5)
-
-plt.legend(["train loss", "test loss"], ncol=2)  # 设置图例并设置列数为2
+plt.legend(["train loss", "test loss"], ncol=2)
 plt.savefig('visualized_pic/Loss.png', dpi=100)
 plt.savefig('visualized_pic/Loss.svg')
 plt.show()
