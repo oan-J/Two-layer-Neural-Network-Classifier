@@ -1,12 +1,12 @@
 # Two-layer Neural Network Classifier
 <!--计算机视觉lab1-->
 
-## 使用说明
+## Instructions
 1. Run _train2seach.py_ to obtain the **optimal hyperparameters**.
 2. Input the **optimal hyperparameters** into _train.py_(already done) and run _train.py_ to obtain **train loss**, **test loss** and **accuracy**. Save them into _visualized_pic_ folder.
 3. Run visualized_params.py to obtain the input and output layer network parameters.
 
-## 文件结构
+## File Structure
 <!--
 - dataset 数据及相关
     - 四个.gz文件为mnist数据集原文件
