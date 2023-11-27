@@ -1,9 +1,13 @@
-# 计算机视觉lab1
+# Two-layer Neural Network Classifier
+<!--计算机视觉lab1-->
+
 ## 使用说明
-1. 运行 train2seach.py，得到最佳超参数
-2. 超参数代入train.py(已写入)，运行train.py，得到train和test的loss，以及accuracy。存入visualized_pic文件夹。
-3. 运行 visualized_params.py，得到输入输出层网络参数
+1. Run _train2seach.py_ to obtain the **optimal hyperparameters**.
+2. Input the **optimal hyperparameters** into _train.py_(already done) and run _train.py_ to obtain **train loss**, **test loss** and **accuracy**. Save them into _visualized_pic_ folder.
+3. Run visualized_params.py to obtain the input and output layer network parameters.
+
 ## 文件结构
+<!--
 - dataset 数据及相关
     - 四个.gz文件为mnist数据集原文件
     - mnist.py用于处理数据集数据
@@ -16,7 +20,29 @@
 - two_layer_net.py 两层神经网络分类器模型
 - util.py 辅助文件
 - visualzie_params.py 可视化网络参数
+-->
+- **dataset Folder:**
+    - The four .gz files contain the original MNIST dataset files.
+    - mnist.py is used to process the dataset.
 
+- **visualized_pic Folder:**
+    - Accuracy stores the accuracy curve from testing.
+    - Loss stores the training and testing loss curves.
+    - W1 and W2 represent the network parameters for the input and output layers.
+
+- **train2search.py:**
+    - Searching for optimal hyperparameters.
+
+- **train.py:**
+    - Training the model.
+
+- **two_layer_net.py:**
+    - Implementation of a two-layer neural network classifier model.
+
+- **util.py**
+
+- **visualize_params.py:**
+    - Visualizing network parameters.
 
 **google drive link：**
 https://drive.google.com/drive/folders/1kACV2krk4ewushLdHWHR2NaOhGUA94Qq?usp=share_link
