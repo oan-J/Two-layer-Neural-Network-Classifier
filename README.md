@@ -44,5 +44,49 @@
 - **visualize_params.py:**
     - Visualizing network parameters.
 
+
+## Results
+- **Train & Test loss**
+  ![Image text](https://github.com/oan-J/Two-layer-Neural-Network-Classifier/blob/main/pic/loss.png)
+There is a negligible difference between Train Loss and Test Loss, which is hardly noticeable in the picture.\
+Here is part of the data.
+
+
+| Epoch  | Train Loss | Test Loss  |
+|--------|------------|------------|
+| epoch0 | 6.98266293 | 6.97194756 |
+| epoch1 | 2.93364027 | 2.9218476  |
+| epoch2 | 1.69614409 | 1.68708984 |
+| epoch3 | 1.11730214 | 1.10961794 |
+| epoch4 | 0.80365476 | 0.79690414 |
+| epoch5 | 0.66260756 | 0.65496229 |
+| epoch6 | 0.60566073 | 0.59731014 |
+| epoch7 | 0.58063861 | 0.57374801 |
+| epoch8 | 0.5320621  | 0.52374169 |
+| epoch9 | 0.5350061  | 0.52709259 |
+| epoch10| 0.53868387 | 0.53087806 |
+| epoch11| 0.55264111 | 0.54647499 |
+| epoch12| 0.51887335 | 0.5140945  |
+| epoch13| 0.5131956  | 0.5055338  |
+| epoch14| 0.54379708 | 0.53731163 |
+| epoch15| 0.54798614 | 0.54056323 |
+
+
+
+  
+- **Accuracy: test_accuracy finally goes to 0.9504**
+  ![Image text](https://github.com/oan-J/Two-layer-Neural-Network-Classifier/blob/main/pic/acc.png)
+Probably overfitting……\
+The best hyperparameters found were:\
+Learning rate:  0.3\
+L2 lambda:  0.001\
+Hidden size:  245\
+
+- **Network parameters of each layer**
+  ![Image text](https://github.com/oan-J/Two-layer-Neural-Network-Classifier/blob/main/pic/para.png)
+
+
+
+
 **google drive link：**
 https://drive.google.com/drive/folders/1XOJPYTXeKhrMKaIz7dax4JWUAhPpeUS5
