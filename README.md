@@ -78,9 +78,9 @@ Here is part of the data.
   ![Image text](https://github.com/oan-J/Two-layer-Neural-Network-Classifier/blob/main/pic/acc.png)
 Probably overfitting……\
 The best hyperparameters found were:\
-Learning rate:  0.3\
-L2 lambda:  0.001\
-Hidden size:  245\
+    - Learning rate:  0.3
+    - L2 lambda:  0.001
+    - Hidden size:  245
 
 - **Network parameters of each layer**
   ![Image text](https://github.com/oan-J/Two-layer-Neural-Network-Classifier/blob/main/pic/para.png)
